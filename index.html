@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+ <div id="container">
+   <header id="main">
+     <h1>Mood Teller</h1>
+   </header>
+   <nav>
+     <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="##">About us</a></li>
+       <li><a href="###">Community</a></li>
+       <li><a href="#">Contact Us</a></li>
+     </ul>
+    </nav>
+     <main>
+       <section id="main">
+         <article>
+           <h2>Mood Teller</h2>
+           <p>Can i guess your mood</p>
+           <form id="moodForm" action="#">
+             <label>Name:</label>
+             <input type="text" id="name" placeholder="Enter your name">
+             <br><br>
+             <label>Mood:</label>
+             <input type="text" id="mood" placeholder="Enter your mood">
+             <br><br>
+             <button onclick={showMood()}>How are you?</button> 
+             <button onclick={clearMood()}>Change mood</button>
+           </form>
+           <div id="holder"></div>
+         </article>
+       </section>
+     <aside>
+       <h2>Sample sidebar</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum arcu augue, sit amet volutpat massa blandit at. Maecenas risus nulla, egestas vel placerat vitae, auctor vel sapien. Donec pulvinar.</p>
+     </aside>
+    </main>
+
+    <div class="clearfix"></div>
+
+    <footer>
+       <p>Copy right@ 2020</p>
+    </footer>
+ </div>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
